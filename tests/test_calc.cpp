@@ -12,3 +12,7 @@ TEST(CalcTest, Mul) {
 TEST(CalcTest, Always_Success) {
     EXPECT_EQ(1, 1);
 }
+
+TEST(CalcTest, Always_Fail) {
+    EXPECT_EQ(1, 2);
+}
