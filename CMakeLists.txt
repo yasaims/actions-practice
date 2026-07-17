@@ -6,6 +6,7 @@ include(FetchContent)
 FetchContent_Declare(
     googletest
     URL https://github.com/google/googletest/archive/refs/tags/v1.15.2.zip
+    DOWNLOAD_EXTRACT_TIMESTAMP 1
 )
 FetchContent_MakeAvailable(googletest)
 
@@ -16,3 +17,5 @@ target_link_libraries(test_calc gtest_main)
 
 include(GoogleTest)
 gtest_discover_tests(test_calc)
+
+add_executable(main src/main.cpp)
