@@ -8,3 +8,7 @@ TEST(CalcTest, Add) {
 TEST(CalcTest, Mul) {
     EXPECT_EQ(mul(2, 3), 6);
 }
+
+TEST(CalcTest, Always_Fail) {
+    EXPECT_EQ(1, 2);
+}
