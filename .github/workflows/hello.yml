@@ -1,0 +1,13 @@
+name: Hello CI
+
+on: push
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello, World!"
+      - name: Show environment variables
+        run: uname -a
+          echo "Triggered by ${{ github.actor }}"
